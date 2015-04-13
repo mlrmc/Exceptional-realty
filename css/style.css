@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900);
 @import url(http://fonts.googleapis.com/css?family=Clicker+Script);
 
+<<<<<<< HEAD
 /*////////// GLOBAL //////////*/
 
 h3 {
@@ -22,10 +23,46 @@ figcaption {
   text-align: right;
 }
 
+=======
+/*selector {
+	property: value;
+	property: value;
+}
+
+*/
+
+/* Type selector  */
+
+p {/* select all <p>  */
+font-size: 1em; /* 16px, 7pt, 100X, 1em */
+line-height: 1.5em;
+}
+
+
+
+figcaption {
+	/*font-weight: normal;
+	font-size:  0.75em;
+	line-height:  1.5em;
+	font-family:  Georgia, "New Times Roman", serif; OR
+  font: normal 0.75em/1em 'Elsie Swash Caps', cursive*/
+
+    font-weight: normal;
+    font-size: 0.75em/1em;
+    line-height: 1.5em;
+    font-family: 'Elsie Swash Caps', cursive;
+    color: #777;
+    text-align: right;
+}
+
+/* Class Selector  (applied to as many elements as you like) */
+
+>>>>>>> 16e857e4820f7c31e22c99640e7cbef015b4a9dc
 .milk-text {
   font: bold 2.6em 'Elsie Swash Caps', cursive;
   color: white;
   text-shadow: 0 2px 3px #000;
+<<<<<<< HEAD
 }
 
 
@@ -72,6 +109,70 @@ img, video, audio, iframe, table, form {
 .col-1 {
   float: left;
   width: 32%;
+=======
+
+}
+
+
+/*ID Selector (applty to one unique element per page*/
+
+#logo {
+  
+}
+
+/* Descendent Selector */
+
+#logo h1 {
+font-family: 'Clicker Script' cursive;
+}
+
+#logo h2{	
+font-family: 'Elsie Swash Caps' cursive;
+}
+
+/* Psuedo Selectors */
+
+#details a:link, #details a:visited {
+color: black;
+text-decoration: none;
+}
+
+
+#details a:hover{	
+color: black;
+text-decoration: underline;
+
+}
+
+
+#details a:active {	
+color: red;
+}
+
+/*////MEDIA///////*/
+
+img, video, audio{
+  max-width: 100%;
+}
+/*////LAYOUT////*/
+
+* {
+  -webkitbox-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.wrapper {
+  width:  960px;
+  margin:  0 auto;
+  
+}
+
+.col-1 {
+  float:  left;
+  width:  32%;
+>>>>>>> 16e857e4820f7c31e22c99640e7cbef015b4a9dc
   background: #ccc;
 }
 
@@ -80,16 +181,32 @@ img, video, audio, iframe, table, form {
   width: 66%;
   background: #ccc;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 16e857e4820f7c31e22c99640e7cbef015b4a9dc
 .col-3 {
   background: #ccc;
 }
 
+<<<<<<< HEAD
+=======
+.clearfix:after {
+  content:  ".";
+  display:  block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+
+  } 
+
+>>>>>>> 16e857e4820f7c31e22c99640e7cbef015b4a9dc
 [class*="col-"] {
   margin-left: 2%;
 }
 
 .first {
+<<<<<<< HEAD
   margin-left: 0%;
 }
 
@@ -98,6 +215,34 @@ img, video, audio, iframe, table, form {
 #social {
   position: fixed;
   top: 185px;
+=======
+    margin-left: 0%;
+    clear: left;
+}
+
+/*////SECTIONS /////*/
+
+section {
+padding: 20px;
+  margin-bottom: 20px;
+
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 1;
+  
+}
+
+/*///// SOCIAL////*/
+
+#social{
+  position: fixed;
+  top: 200px;
+>>>>>>> 16e857e4820f7c31e22c99640e7cbef015b4a9dc
   right: 20px;
   width: 40px;
   z-index: 1;
@@ -110,6 +255,7 @@ img, video, audio, iframe, table, form {
   background: yellow;
 }
 
+<<<<<<< HEAD
 /*////////// HEADER //////////*/
 
 
@@ -162,4 +308,6 @@ section {
 
 /*////////// FOOTER //////////*/
 
+=======
+>>>>>>> 16e857e4820f7c31e22c99640e7cbef015b4a9dc
 
