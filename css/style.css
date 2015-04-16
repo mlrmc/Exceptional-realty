@@ -3,11 +3,23 @@
 
 /*////////// GLOBAL //////////*/
 
+body {
+  font-size: 100%;
+}
+
 h3 {
   margin: 0 0 10px;
 }
 
-p { 
+ul, ol {
+  margin-bottom: 10px;
+}
+
+li {
+  margin-left: 20px;
+}
+
+p, address { 
   font-size: 1em; /* 16px, ?pt, 100%, 1em */
   line-height: 1.5em;
 }
@@ -22,6 +34,7 @@ figcaption {
   text-align: right;
 }
 
+<<<<<<< HEAD
 
 
 /* Type selector  */
@@ -33,6 +46,59 @@ line-height: 1.5em;
 
 
 }
+=======
+table {
+  margin: 0 0 20px;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+tr:nth-child(even) {
+  background: #efefef;
+}
+
+th, td {
+  padding: 10px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  background: #555;
+  color: white;
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+  box-shadow: 0 3px 5px #ccc;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  margin-top: 5px;
+  width: 100px;
+  background: black;
+  color: white;
+  border-radius: 25px;
+  border: 0;
+}
+
+input[type="submit"]:hover {
+  background: #555;
+}
+
+iframe {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  height: 403px;
+}
+
+>>>>>>> responsive-design
 .milk-text {
   font: bold 2.6em 'Elsie Swash Caps', cursive;
   color: white;
@@ -188,8 +254,16 @@ margin: 0;
 >>>>>>> 8ccb2e71fd79879716a67f32e6146e5b519a143d
 }
 
-.col-3 {
-  
+.col-3 p {
+  -moz-column-rule: 1px dotted #ccc;
+  -webkit-column-rule: 1px dotted #ccc;
+  column-rule: 1px dotted #ccc;
+  -moz-column-gap: 1.5em;
+  -webkit-column-gap: 1.5em;
+  column-gap: 1.5em;
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  column-count: 3;
 }
 
 
@@ -224,8 +298,12 @@ header {
 
 #social{
   position: fixed;
+<<<<<<< HEAD
   top: 200px;
 
+=======
+  top: 163px;
+>>>>>>> responsive-design
   right: 20px;
   width: 40px;
   z-index: 2;
@@ -238,6 +316,7 @@ header {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+<<<<<<< HEAD
  
 }
 
@@ -256,6 +335,12 @@ a.twit:active {background-position: -80px -40px; }
 =======
 header {
   margin: 0 0 30px;
+=======
+}
+
+a.fbook, a.twit, a.gplus {
+  background: url(../images/social-icons.png) no-repeat;
+>>>>>>> responsive-design
 }
 >>>>>>> 8ccb2e71fd79879716a67f32e6146e5b519a143d
 
@@ -265,6 +350,18 @@ a.gplus:active {background-position: -80px -80px; }
 
 
 
+
+a.fbook { background-position: 0 0; }
+a.fbook:hover { background-position: -40px 0; }
+a.fbook:active { background-position: -80px 0; }
+
+a.twit { background-position: 0 -40px; }
+a.twit:hover { background-position: -40px -40px; }
+a.twit:active { background-position: -80px -40px; }
+
+a.gplus { background-position: 0 -80px; }
+a.gplus:hover { background-position: -40px -80px; }
+a.gplus:active { background-position: -80px -80px; }
 
 /*////////// HEADER //////////*/
 
@@ -330,20 +427,33 @@ header {
   background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(71,71,71,1) 28%,rgba(81,81,81,1) 35%,rgba(71,71,71,1) 72%,rgba(43,43,43,1) 87%,rgba(28,28,28,1) 91%,rgba(0,0,0,1) 100%); /* W3C */
 }
 
+#navbar nav a.menu-icon {
+  display: none;
+}
+
 /*////////// LOGO //////////*/
 
 #logo {
-  padding: 84px 0 0;
+  padding: 74px 0 0;
 }
 
 #logo h1 {
-  font-family: 'Clicker Script', cursive;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
   margin: 0;
+  background: url(../images/exceptional-logo.png) no-repeat;
+  background-size: 100% 100%;
 }
 
 #logo h2 {
-  font-family: 'Elsie Swash Caps', cursive;
+  display: inline-block;
+  font: 2.5em "Clicker Script", cursive;
   margin: 0;
+<<<<<<< HEAD
 =======
 }
 
@@ -351,6 +461,12 @@ header {
   background: #333;
   color: white;
 >>>>>>> 8ccb2e71fd79879716a67f32e6146e5b519a143d
+=======
+  position: relative;
+  top: -9px;
+  left: 5px;
+  color: #303;
+>>>>>>> responsive-design
 }
  #navbar nav a:hover {
   color: white;
